@@ -1,5 +1,13 @@
 package com.example.fizzbuzz
 
 fun main() {
-    print("hello world!")
+    for (i in 1..100) {
+        var output = ""
+
+        if (i % 3 == 0) output += "Fizz"
+        if (i % 5 == 0) output += "Buzz"
+        if (output == "") output += i
+
+        println(output)
+    }
 }
